@@ -12,10 +12,10 @@ const App = () => {
         <>
             <NavBar />
             <Hero />
-            <ShowcaseSection />
             <FeatureCards />
-            <ExperienceSection />
+            <ShowcaseSection />
             <TechStack />
+            <ExperienceSection />
             <Contact />
             <Footer />
 
