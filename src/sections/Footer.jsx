@@ -3,13 +3,15 @@ import {socialImgs} from "../constants/index.js";
 
 
 const Footer = () => {
+    const basePath = import.meta.env.BASE_URL;
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className="flex items-center md:items-start">
                     <a href="https://github.com/nathanv0"
                         className="flex items-center gap-2 px-4 py-2 rounded-lg  transition">
-                        <img src="/images/github-mark-white.png" alt="github" className="w-5 h-5"/>
+
+                        <img src={`${basePath}images/github-mark-white.png`} alt="github" className="w-5 h-5"/>
                         <span>Visit my Github</span>
                     </a>
                 </div>

@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 
 const Hero = () => {
+    const basePath = import.meta.env.BASE_URL;
     useGSAP(() => {
         // UseGSAP for animation: target the hero-text h1 element
         gsap.fromTo('.hero-text h1',
@@ -25,7 +26,7 @@ const Hero = () => {
     return (
         <section id="hero" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
-                <img src="/images/bg.png" alt="background" />
+                <img src={`${basePath}images/bg.png`} alt="background"/>
             </div>
 
             <div className="hero-layout">

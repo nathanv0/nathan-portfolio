@@ -12,6 +12,8 @@ const ShowcaseSection = () => {
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
 
+    const basePath = import.meta.env.BASE_URL;
+
     useGSAP(() => {
         // Create an array of projects and add animation to each one
         const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
@@ -49,7 +51,7 @@ const ShowcaseSection = () => {
                     {/* LEFT side*/}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="Ryde"/>
+                            <img src={`${basePath}images/project1.png`} alt="Dealer"/>
                         </div>
                         <div className="text-content">
                             <h2>Multi-Dealer Logistics with a Robust Vehicle Tracking System</h2>
@@ -69,7 +71,7 @@ const ShowcaseSection = () => {
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={project2Ref}>
                             <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/cs50_finance.png" alt="Stock trading web application"/>
+                                <img src={`${basePath}images/cs50_finance.png`} alt="Stock trading web application"/>
                             </div>
                             <h2>A full-stack stock trading web app using Flask, MySQL, and Python</h2>
 
@@ -77,7 +79,7 @@ const ShowcaseSection = () => {
 
                         <div className="project" ref={project3Ref}>
                             <div className="image-wrapper bg-[#ffe7eb]">
-                                <img src="/images/project_sushi.png" alt="Sushiman"/>
+                                <img src={`${basePath}images/project_sushi.png`} alt="Sushiman"/>
                             </div>
                             <h2>Sushiman - A Japanese food delivery service</h2>
 

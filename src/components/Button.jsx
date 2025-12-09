@@ -1,4 +1,5 @@
 const Button = ({text, className, id}) => {
+    const basePath = import.meta.env.BASE_URL;
     return (
         // Call to action
         <a
@@ -20,7 +21,7 @@ const Button = ({text, className, id}) => {
                 <div className="bg-circle" />
                 <p className="text">{text}</p>
                 <div className="arrow-wrapper">
-                    <img src="/images/arrow-down.svg" alt="arrow"/>
+                    <img src={`${basePath}/arrow-down.svg" alt="arrow`} alt="arrow"/>
                 </div>
             </div>
         </a>

@@ -41,6 +41,8 @@ const Contact = () => {
         }
     };
 
+    const basePath = import.meta.env.BASE_URL;
+
     return (
         <section id="contact" className="flex-center section-padding">
             <div className="w-full h-full md:px-10 px-5">
@@ -96,7 +98,7 @@ const Contact = () => {
                                         {/* If in the loading state-> display sending message*/}
                                         <p className="text">{loading ? 'Sending...' : 'Send Message'}</p>
                                         <div className="arrow-wrapper">
-                                            <img src="/images/arrow-right.svg" alt="arrow"/>
+                                            <img src={`${basePath}images/arrow-right.svg`} alt="arrow"/>
                                         </div>
                                     </div>
                                 </button>
