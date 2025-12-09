@@ -33,6 +33,6 @@ export function Computer(props) {
     );
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/computer-optimized-transformed.glb"`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/computer-optimized-transformed.glb`);
 
 export default Computer;
