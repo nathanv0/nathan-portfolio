@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="hero-layout">
                 {/*LEFT: HERO CONTENT*/}
                 <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-                    <div className="flex flex-col gap-7">
+                    <div className="flex flex-col gap-8">
                         <div className="hero-text">
                             <h1>Shaping
                                 <span className="slide">
@@ -53,14 +53,15 @@ const Hero = () => {
                         <Button className = "md:w-80 md:h-16 w-60 h-12"
                         id="button" text="See my Work"/>
                     </div>
-
                 </header>
+
                 {/*RIGHT: 3D MODEL*/}
                 <figure>
                     <div className="hero-3d-layout hover:cursor-grab rounded-3xl overflow-hidden">
-                        <HeroExperience />
+                        <HeroExperience/>
                     </div>
                 </figure>
+
 
             </div>
             {/*<AnimatedCounter />*/}

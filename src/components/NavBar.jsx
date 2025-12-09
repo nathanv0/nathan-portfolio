@@ -22,7 +22,7 @@ const NavBar = () => {
                     Nathan Vo
                 </a>
                 <nav className="desktop">
-                    <ul>
+                    <ul className="text-xl">
                         {navLinks.map(({link, name}) => (
                             <li key={name} className="group">
                                 <a href={link}>
