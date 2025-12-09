@@ -6,14 +6,18 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <div className="flex flex-col justify-center md:items-start items-center">
-                    <a href="/">Visit my Github</a>
+                <div className="flex items-center md:items-start">
+                    <a href="https://github.com/nathanv0"
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg  transition">
+                        <img src="/images/github-mark-white.png" alt="github" className="w-5 h-5"/>
+                        <span>Visit my Github</span>
+                    </a>
                 </div>
 
                 <div className="socials">
                     {socialImgs.map((img) => (
                         <a className="icon" target="_blank" href={img.url} key={img.url}>
-                            <img src={img.imgPath} />
+                            <img src={img.imgPath}/>
                         </a>
                     ))}
                 </div>
