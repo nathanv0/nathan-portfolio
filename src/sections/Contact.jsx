@@ -96,7 +96,7 @@ const Contact = () => {
                                         {/* If in the loading state-> display sending message*/}
                                         <p className="text">{loading ? 'Sending...' : 'Send Message'}</p>
                                         <div className="arrow-wrapper">
-                                            <img src="/images/arrow-down.svg" alt="arrow"/>
+                                            <img src="/images/arrow-right.svg" alt="arrow"/>
                                         </div>
                                     </div>
                                 </button>
