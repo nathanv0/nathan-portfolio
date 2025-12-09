@@ -21,7 +21,10 @@ const Button = ({text, className, id}) => {
                 <div className="bg-circle" />
                 <p className="text">{text}</p>
                 <div className="arrow-wrapper">
-                    <img src={`${basePath}/arrow-down.svg" alt="arrow`} alt="arrow"/>
+                    <img
+                        src={`${basePath}images/arrow-down.svg`}
+                        alt="arrow"
+                    />
                 </div>
             </div>
         </a>

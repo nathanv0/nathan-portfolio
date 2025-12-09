@@ -175,4 +175,4 @@ export function Room(props) {
     );
 }
 
-useGLTF.preload("/models/optimized-room.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/optimized-room.glb`);

@@ -7,8 +7,10 @@ Files: .\computer-optimized.glb [486.38KB] > [39.72KB] (92%)
 import { useGLTF } from "@react-three/drei";
 
 export function Computer(props) {
+    const basePath = import.meta.env.BASE_URL;
+
     const { nodes, materials } = useGLTF(
-        "/models/computer-optimized-transformed.glb"
+        `${basePath}models/computer-optimized-transformed.glb`
     );
 
     return (
@@ -31,6 +33,6 @@ export function Computer(props) {
     );
 }
 
-useGLTF.preload("/models/computer-optimized-transformed.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/computer-optimized-transformed.glb"`);
 
 export default Computer;

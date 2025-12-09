@@ -1,3 +1,6 @@
+// Define the base path once to use everywhere
+const basePath = import.meta.env.BASE_URL;
+
 const navLinks = [
     {
         name: "Work",
@@ -14,30 +17,30 @@ const navLinks = [
 ];
 
 const words = [
-    { text: "Ideas", imgPath: "./images/ideas.svg" },
-    { text: "Concepts", imgPath: "./images/concepts.svg" },
-    { text: "Designs", imgPath: "./images/designs.svg" },
-    { text: "Code", imgPath: "./images/code.svg" },
-    { text: "Ideas", imgPath: "./images/ideas.svg" },
-    { text: "Concepts", imgPath: "./images/concepts.svg" },
-    { text: "Designs", imgPath: "./images/designs.svg" },
-    { text: "Code", imgPath: "./images/code.svg" },
+    { text: "Ideas", imgPath: `${basePath}images/ideas.svg` },
+    { text: "Concepts", imgPath: `${basePath}images/concepts.svg` },
+    { text: "Designs", imgPath: `${basePath}images/designs.svg` },
+    { text: "Code", imgPath: `${basePath}images/code.svg` },
+    { text: "Ideas", imgPath: `${basePath}images/ideas.svg` },
+    { text: "Concepts", imgPath: `${basePath}images/concepts.svg` },
+    { text: "Designs", imgPath: `${basePath}images/designs.svg` },
+    { text: "Code", imgPath: `${basePath}images/code.svg` },
 ];
 
 
 const abilities = [
     {
-        imgPath: "./images/seo.png",
+        imgPath: `${basePath}images/seo.png`,
         title: "Attention to Detail",
         desc: "I prioritize clean, bug-free code and pixel-perfect designs to ensure a polished user experience.",
     },
     {
-        imgPath: "./images/devices.png",
+        imgPath: `${basePath}images/devices.png`,
         title: "Problem Solver",
         desc: "I thrive on breaking down complex technical challenges and engineering efficient, scalable solutions.",
     },
     {
-        imgPath: "./images/time.png",
+        imgPath: `${basePath}images/time.png`,
         title: "Adaptability",
         desc: "I quickly master new languages and frameworks (like switching from Java to React) to stay ahead of the curve.",
     },
@@ -46,54 +49,54 @@ const abilities = [
 const techStackImgs = [
     {
         name: "HTML",
-        imgPath: "./images/logos/html.svg",
+        imgPath: `${basePath}images/logos/html.svg`,
     },
     {
         name: "CSS",
-        imgPath: "./images/logos/css.svg",
+        imgPath: `${basePath}images/logos/css.svg`,
     },
     {
         name: "JavaScript",
-        imgPath: "./images/logos/javascript.svg",
+        imgPath: `${basePath}images/logos/javascript.svg`,
     },
     {
         name: "VSCode",
-        imgPath: "./images/logos/vscode.svg",
+        imgPath: `${basePath}images/logos/vscode.svg`,
     },
     {
         name: "Github",
-        imgPath: "./images/logos/github.svg",
+        imgPath: `${basePath}images/logos/github.svg`,
     },
 ];
 
 const techStackIcons = [
     {
         name: "React",
-        modelPath: "./models/react_logo-transformed.glb",
+        modelPath: `${basePath}models/react_logo-transformed.glb`,
         scale: 1,
         rotation: [0, 0, 0],
     },
     {
         name: "Python",
-        modelPath: "./models/python-transformed.glb",
+        modelPath: `${basePath}models/python-transformed.glb`,
         scale: 0.8,
         rotation: [0, 0, 0],
     },
     {
         name: "Java",
-        modelPath: "./models/java.glb",
+        modelPath: `${basePath}models/java.glb`,
         scale: 1.5,
         rotation: [0, -Math.PI / 2, 0],
     },
     {
         name: "Three JS",
-        modelPath: "./models/three.js-transformed.glb",
+        modelPath: `${basePath}models/three.js-transformed.glb`,
         scale: 0.05,
         rotation: [0, 0, 0],
     },
     {
         name: "Git",
-        modelPath: "./models/git-svg-transformed.glb",
+        modelPath: `${basePath}models/git-svg-transformed.glb`,
         scale: 0.05,
         rotation: [0, -Math.PI / 4, 0],
     },
@@ -101,7 +104,7 @@ const techStackIcons = [
 
 const expCards = [
     {
-        imgPath: "./images/stem.png",
+        imgPath: `${basePath}images/stem.png`,
         title: "Software Engineer Technical Coach (Volunteer)",
         date: "November 2024 - May 2025",
         responsibilities: [
@@ -110,7 +113,7 @@ const expCards = [
         ],
     },
     {
-        imgPath: "./images/biomerics.jpg",
+        imgPath: `${basePath}images/biomerics.jpg`,
         title: "Production Operator Specialist",
         date: "February 2024 - August 2024",
         responsibilities: [
@@ -121,7 +124,7 @@ const expCards = [
     },
     {
 
-        imgPath: "./images/kyoto.jpg",
+        imgPath: `${basePath}images/kyoto.jpg`,
         title: "Sushi Server",
         date: "October 2022 - February 2024",
         responsibilities: [
@@ -136,17 +139,17 @@ const socialImgs = [
     {
         name: "insta",
         url: "https://www.instagram.com/",
-        imgPath: "./images/insta.png",
+        imgPath: `${basePath}images/insta.png`,
     },
     {
         name: "fb",
         url: "https://www.facebook.com/",
-        imgPath: "./images/fb.png",
+        imgPath: `${basePath}images/fb.png`,
     },
     {
         name: "linkedin",
         url: "https://www.linkedin.com/in/nathan-v0/",
-        imgPath: "./images/linkedin.png",
+        imgPath: `${basePath}images/linkedin.png`,
     },
 ];
 
